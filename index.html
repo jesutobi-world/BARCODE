@@ -27,11 +27,9 @@
             flex-direction: column;
             justify-content: space-between;
             gap: 3vw;
-            border: 2px solid red;
         }
         .barcode-container{
             display: flex;
-            border: 2px solid black;
             justify-content: center;
             gap: 15vw;
             text-align: center;
@@ -40,6 +38,14 @@
         .barcode-container p{
             font-size: 3vw;
             color: gray;
+        }
+        @media (max-width: 550px){
+            body{
+                height: 100vh;
+            }
+            .barcode-container{
+                height: 80%;
+            }
         }
     </style>
 </head>
@@ -93,3 +99,4 @@
     </div>
 </body>
 </html>
+
